@@ -58,7 +58,13 @@ $(function () {
     createPlatform(830, 540, 20, 100); // short but wide platform located 500 pixels from the left of the screen and 300 pixels from the top of the screen
     createPlatform(830, 520, 90, 20); // short but wide platform located 500 pixels from the left of the screen and 300 pixels from the top of the screen
     createPlatform(920, 520, 20, 130); // short but wide platform located 500 pixels from the left of the screen and 300 pixels from the top of the screen
-
+    createPlatform(1150, 630, 500, 20); // short but wide platform located 500 pixels from the left of the screen and 300 pixels from the top of the screen
+    createPlatform(750, 400, 90, 20); // short but wide platform located 500 pixels from the left of the screen and 300 pixels from the top of the screen
+    createPlatform(750, 270, 90, 20); // short but wide platform located 500 pixels from the left of the screen and 300 pixels from the top of the screen
+    createPlatform(750, 150, 90, 20); // short but wide platform located 500 pixels from the left of the screen and 300 pixels from the top of the screen
+    createPlatform(950, 130, 50, 20); // short but wide platform located 500 pixels from the left of the screen and 300 pixels from the top of the screen
+    createPlatform(1090, 130, 50, 20); // short but wide platform located 500 pixels from the left of the screen and 300 pixels from the top of the screen
+    createPlatform(1230, 130, 20, 500); // short but wide platform located 500 pixels from the left of the screen and 300 pixels from the top of the screen
 
 
     // TODO 2
@@ -67,7 +73,12 @@ $(function () {
     // Your collectable choices are 'database' 'diamond' 'grace' 'kennedi' 'max' and 'steve'; more can be added if you wish
     // example usage: createCollectable(type, x, y, gravity, bounce)
 
-
+    createCollectable("steve",330, 430, 70, 0.5); // creates a "steve" collectible at the coordinates (500, 300)
+    createCollectable("steve", 330, 350, 0, 0.5); // creates a "steve" collectible at the coordinates (500, 300)
+    createCollectable("steve", 680, 200, 0, 0.5); // creates a "steve" collectible at the coordinates (500, 300)
+    createCollectable("steve", 680, 400, 0, 0.5); // creates a "steve" collectible at the coordinates (500, 300)
+    createCollectable("steve", 680, 600, 0, 0.5); // creates a "steve" collectible at the coordinates (500, 300)
+    createCollectable("grace",1300, 300); // creates a "grace" collectible at the coordinates (500, 300), falling with default gravity and bouncing with default bounce %
 
 
     // TODO 3
@@ -76,7 +87,9 @@ $(function () {
     // Your wall choices are: 'top' 'left' 'right' and 'bottom'
     // example usage: createCannon(side, position, delay, width, height)
 
-
+    createCannon("right", 500, 1500); // cannon on left wall, 600px down, shooting once per second
+    createCannon("right", 345, 2000); // cannon on left wall, 600px down, shooting once per second
+    createCannon("right",750, 2500); // cannon on left wall, 600px down, shooting once per second
 
 
     /////////////////////////////////////////////////
